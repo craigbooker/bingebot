@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		443F4CCA23EDDEA000A1F7E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443F4CC923EDDEA000A1F7E2 /* AppDelegate.swift */; };
-		443F4CCC23EDDEA000A1F7E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443F4CCB23EDDEA000A1F7E2 /* SceneDelegate.swift */; };
 		443F4CCE23EDDEA000A1F7E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443F4CCD23EDDEA000A1F7E2 /* ViewController.swift */; };
 		443F4CD123EDDEA000A1F7E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443F4CCF23EDDEA000A1F7E2 /* Main.storyboard */; };
 		443F4CD323EDDEA600A1F7E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 443F4CD223EDDEA600A1F7E2 /* Assets.xcassets */; };
 		443F4CD623EDDEA600A1F7E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443F4CD423EDDEA600A1F7E2 /* LaunchScreen.storyboard */; };
+		443F4CDF23EDEF3B00A1F7E2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443F4CDE23EDEF3B00A1F7E2 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		443F4CC623EDDEA000A1F7E2 /* BingeBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BingeBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		443F4CC923EDDEA000A1F7E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		443F4CCB23EDDEA000A1F7E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		443F4CCD23EDDEA000A1F7E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		443F4CD023EDDEA000A1F7E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		443F4CD223EDDEA600A1F7E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		443F4CD523EDDEA600A1F7E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		443F4CD723EDDEA600A1F7E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		443F4CDE23EDEF3B00A1F7E2 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +56,8 @@
 		443F4CC823EDDEA000A1F7E2 /* BingeBot */ = {
 			isa = PBXGroup;
 			children = (
+				443F4CDD23EDEF2100A1F7E2 /* Utils */,
 				443F4CC923EDDEA000A1F7E2 /* AppDelegate.swift */,
-				443F4CCB23EDDEA000A1F7E2 /* SceneDelegate.swift */,
 				443F4CCD23EDDEA000A1F7E2 /* ViewController.swift */,
 				443F4CCF23EDDEA000A1F7E2 /* Main.storyboard */,
 				443F4CD223EDDEA600A1F7E2 /* Assets.xcassets */,
@@ -65,6 +65,14 @@
 				443F4CD723EDDEA600A1F7E2 /* Info.plist */,
 			);
 			path = BingeBot;
+			sourceTree = "<group>";
+		};
+		443F4CDD23EDEF2100A1F7E2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				443F4CDE23EDEF3B00A1F7E2 /* Extensions.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +147,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				443F4CCE23EDDEA000A1F7E2 /* ViewController.swift in Sources */,
+				443F4CDF23EDEF3B00A1F7E2 /* Extensions.swift in Sources */,
 				443F4CCA23EDDEA000A1F7E2 /* AppDelegate.swift in Sources */,
-				443F4CCC23EDDEA000A1F7E2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +224,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +278,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -287,6 +295,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WQYHWJVQDB;
 				INFOPLIST_FILE = BingeBot/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +314,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WQYHWJVQDB;
 				INFOPLIST_FILE = BingeBot/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
